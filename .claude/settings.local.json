@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"winget install --id Git.Git -e --source winget\")",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); cmd /c \"git --version\")",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); cmd /c \"cd /d \"\"c:\\\\Users\\\\liamf\\\\Desktop\\\\MSM Website\"\" && git init && git add . && git commit -m \"\"Initial commit\"\"\")"
+    ]
+  }
+}
